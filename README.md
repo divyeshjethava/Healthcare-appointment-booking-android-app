@@ -56,4 +56,12 @@ https://github.com/user-attachments/assets/75a642bc-b716-45e7-bbbe-2e8f0ac264fd
 
 ---
 
+# **Other Project**
+
+For e-commerce website using html,css,js visit below Link
+
+
+[  Visit :- ] (https://divyeshjethava.github.io/Blackfox-E-Commerce-Website/home.html)
+
+---
 
