@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.Patient.Home_fragment">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello"
+                    android:textSize="18dp"
+                    android:textColor="#006A8C"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/userNameHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#006A8C"
+                    android:layout_marginTop="2dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardElevation="0dp"
+                    android:gravity="center"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:id="@+id/home_picture"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerCrop"
+                        android:background="@color/back"
+                        android:src="@drawable/profile_picture2" />
+
+                    <!--<com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/image_lottie"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/image_loading1">
+                    </com.airbnb.lottie.LottieAnimationView>-->
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_doc_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_layout1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back_shap9"
+        android:focusable="false"
+        android:theme="@style/Theme.Design.Light"
+        app:closeIcon="@drawable/baseline_close_24"
+        app:queryHint="Search..."
+        app:searchHintIcon="@null">
+    </androidx.appcompat.widget.SearchView>
+
+
+
+
+
+    <!--<RelativeLayout
+        android:id="@+id/relative_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/back_shap9"
+        android:layout_below="@+id/relative_layout1">
+
+
+        <EditText
+            android:id="@+id/edtSearchDoctorH"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/back_shap9"
+            android:drawableStart="@drawable/searching1"
+            android:drawablePadding="10dp"
+            android:hint="Search doctor"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#000000"
+            android:textColorHint="#9FA4A6"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:background="#F5F7F8"
+            android:gravity="end"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/cross_home"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/close2" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>-->
+
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/search_doc_home"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <RelativeLayout
+        android:id="@+id/relative_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/relative_layout2">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Specializations"
+            android:textColor="#008FBC"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtSeeAll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/textView23"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="See All"
+            android:textColor="#919FA9"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+            <!--<HorizontalScrollView
+                android:id="@+id/scrollView_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="5dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/back_shap9"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                app:srcCompat="@drawable/dept1" />
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Cardiology"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/back_shap9"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="3dp"
+                                app:srcCompat="@drawable/dept2" />
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Neurology"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/back_shap9"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                app:srcCompat="@drawable/dept3" />
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Pulmonary"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/back_shap9"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                app:srcCompat="@drawable/dept4" />
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Urology"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/back_shap9"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="3dp"
+                                app:srcCompat="@drawable/dept5" />
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Dental"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/back_shap9"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="1dp"
+                                app:srcCompat="@drawable/dept6" />
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Padiatrics"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/back_shap9"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                app:srcCompat="@drawable/dept7" />
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Trichologist"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/back_shap9"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                app:srcCompat="@drawable/dept8" />
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Ophthalmologist"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>-->
+
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleview_patient_dept"
+                android:layout_below="@+id/relative_layout3"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+
+
+
+
+
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/offers_image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:iss_auto_cycle="true"
+                android:paddingHorizontal="15dp"
+                app:iss_period="1000"
+                app:iss_delay="1000"
+                app:iss_corner_radius="30"
+                android:layout_marginTop="10dp"
+                app:iss_text_color="#00FFFFFF"
+                app:iss_error_image="@drawable/logo1"
+                app:iss_title_background="@drawable/slider_back" />
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Top Doctors"
+                    android:textColor="#008FBC"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_see_all_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="130dp"
+                    android:layout_toEndOf="@+id/textView23"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="See All"
+                    android:textColor="#919FA9"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/scrollView_home"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="100dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/home_recycleView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            tools:listitem="@layout/see_doctor_list"
+                            android:layout_alignParentBottom="true" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

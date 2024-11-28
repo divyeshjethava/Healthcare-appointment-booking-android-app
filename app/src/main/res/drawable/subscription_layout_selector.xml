@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- State when layout is pressed -->
+    <item android:state_pressed="true">
+        <color android:color="@drawable/subscription_shape3" />
+    </item>
+    <!-- State when layout is focused (optional) -->
+    <item android:state_focused="true">
+        <color android:color="@drawable/subscription_shape2" />
+    </item>
+    <!-- State when layout is not select (optional) -->
+    <item android:state_focused="true">
+        <color android:color="@drawable/subscription_shape5" />
+    </item>
+    <!-- Default state -->
+    <item>
+        <color android:color="@drawable/subscription_shape4" />
+    </item>
+
+</selector>

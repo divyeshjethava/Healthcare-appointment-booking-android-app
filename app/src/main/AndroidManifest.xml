@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_circle"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthCare"
+        tools:targetApi="31">
+        <activity
+            android:name="com.example.Admin.Add_New_Offers"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Doctor.DEditProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Admin.Edit_Dept_Info"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Patient.See_All_Doctors"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Admin.Add_New_Admin"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Admin.Add_Departments"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Admin.Admin_Home"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Patient.Book_Appointment_successful"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Doctor.Doctor_Information"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Patient.Book_Apointment"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Patient.Settings"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Patient.MySubscription"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Patient.Department_Info"
+            android:exported="false" />
+        <activity
+            android:name=".test2"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Patient.EditProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Patient.PatientProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Chating"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Patient.ForgotPassword3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Patient.ForgotPassword2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Patient.ForgotPassword1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Patient.SelectField"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Patient.PHomePage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Doctor.DHomePage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Doctor.DLoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Patient.PaymentMethod"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Doctor.DoctorProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Patient.Departments"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Patient.PLoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Patient.PSignupActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Doctor.DSignupActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Patient.splash_screen"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.Patient.Start"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    tools:context="com.example.Doctor.DHomePage">
+
+
+    <FrameLayout
+        android:id="@+id/d_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+
+    </FrameLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="#ffffff"
+        android:layout_marginBottom="25dp">
+
+        <nl.joery.animatedbottombar.AnimatedBottomBar
+            android:id="@+id/d_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:abb_indicatorAppearance="round"
+            app:abb_indicatorHeight="4dp"
+            app:abb_indicatorLocation="bottom"
+            app:abb_indicatorMargin="16dp"
+            app:abb_selectedIndex="0"
+            app:abb_tabColorSelected="#008DB8"
+            app:abb_tabColor="#B6C9CF"
+            app:abb_selectedTabType="text"
+            app:abb_tabs="@menu/doctor_menu"></nl.joery.animatedbottombar.AnimatedBottomBar>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

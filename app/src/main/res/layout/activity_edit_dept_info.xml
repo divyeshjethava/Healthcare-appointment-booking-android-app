@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.Admin.Edit_Dept_Info">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/back_shap9_1"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/relative_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="55dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/edit_dept_Img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:enabled="false"
+
+                app:srcCompat="@drawable/dept1" />
+
+        </RelativeLayout>
+
+
+
+            <EditText
+                android:id="@+id/edit_txt_dept_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:background="#F5F7F8"
+                android:textColor="#008DB8"
+                android:hint="Dept name"
+                android:textAlignment="center"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textStyle="bold"
+                android:enabled="false"
+                android:textColorHint="#82D9F3"
+                android:textSize="20dp"></EditText>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <ImageView
+                android:id="@+id/back_edit_dept_info"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="3dp"
+                app:srcCompat="@drawable/back_page" />
+
+
+            <TextView
+                android:id="@+id/txt_edit_dept"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="Edit"
+                android:textSize="16dp"
+                android:textColor="#008DB8"
+                android:paddingTop="10dp"
+                android:layout_marginEnd="15dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_layout2"
+        android:layout_marginTop="15dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_below="@+id/relative_layout2"
+                android:padding="15dp"
+                android:background="@drawable/back_shap9"
+                android:layout_marginTop="0dp">
+
+
+
+                <TextView
+                    android:id="@+id/txtSDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="Description"
+                    android:textStyle="bold"
+                    android:textColor="#008DB8"
+                    android:hint="text"
+                    android:textSize="18dp" />
+
+
+                <EditText
+                    android:id="@+id/edit_txt_Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/txtSDescription"
+                    android:background="#F5F7F8"
+                    android:textColor="#000000"
+                    android:hint="Dept Des"
+                    android:gravity="top"
+                    android:enabled="false"
+                    android:textColorHint="#82D9F3"
+                    android:textSize="15dp"></EditText>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/relative_in_recycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="15dp">
+
+
+                <TextView
+                    android:id="@+id/txt_find_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="Top Doctors"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="30dp"
+                    android:textColor="#008DB8"
+                    android:hint="text"
+                    android:textSize="18dp" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleView_department_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_find_doc"></androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_show_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                app:cardCornerRadius="8dp"
+                android:visibility="gone"
+                app:cardElevation="8dp">
+
+
+                <TextView
+                    android:id="@+id/btn_save_dept_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/button_shap4"
+                    android:padding="10dp"
+                    android:text="Save"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="8dp"></TextView>
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/edit_dept_dot_loading"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:lottie_autoPlay="true"
+                    android:layout_marginTop="-35dp"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/dot_loading" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

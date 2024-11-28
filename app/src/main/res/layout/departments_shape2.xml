@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    app:cardBackgroundColor="#F1F9FF"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="20dp">
+
+
+            <ImageView
+                android:id="@+id/dept_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/dept1" />
+
+            <TextView
+                android:id="@+id/txt_dept_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView7"
+                android:layout_marginTop="10dp"
+                android:text="Cardiology"
+                android:textAlignment="center"
+                android:textColor="#008DB8"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/txt_dept_des"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="5dp"
+                android:text="Cardiology is a medical specialty and a branch of internal medicine concerned with disorders of the heart. It deals with the diagnosis and treatment of such conditions as congenital heart defects, coronary artery disease, electrophysiology, heart failure and valvular heart disease."
+                android:gravity="center"
+                android:textColor="#474747"
+                android:textSize="11dp" />
+
+
+            <Button
+                android:id="@+id/btn_view_dept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="View Detail"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                app:backgroundTint="#008DB8"
+                app:cornerRadius="11dp" />
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

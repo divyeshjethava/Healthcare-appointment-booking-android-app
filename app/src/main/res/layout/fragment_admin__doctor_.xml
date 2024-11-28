@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.Admin.Admin_Doctor_F"
+    android:background="#FFFFFF">
+
+
+
+
+
+   <RelativeLayout
+       android:id="@+id/relative_layout1"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentEnd="true"
+       android:layout_marginStart="20dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginEnd="20dp">
+
+      <com.google.android.material.tabs.TabLayout
+          android:id="@+id/tabLayout1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentEnd="true"
+          android:background="@drawable/back_shap9"
+
+          app:tabIndicator="@drawable/selected_menu"
+          app:tabIndicatorAnimationMode="elastic"
+          app:tabIndicatorColor="#008DB8"
+          app:tabIndicatorGravity="stretch"
+          app:tabMode="fixed"
+          app:tabSelectedTextColor="#ffffff"
+          app:tabTextColor="#D1D1D1">
+
+      </com.google.android.material.tabs.TabLayout>
+
+   </RelativeLayout>
+
+   <androidx.viewpager2.widget.ViewPager2
+       android:id="@+id/viewPager1"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/relative_layout1"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentEnd="true">
+
+   </androidx.viewpager2.widget.ViewPager2>
+
+
+
+
+   <!-- <RelativeLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/back_shap9">
+
+
+        <EditText
+            android:id="@+id/edtSearchDoctorH"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/back_shap9"
+            android:drawableStart="@drawable/searching1"
+            android:drawablePadding="10dp"
+            android:hint="Search doctor"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#000000"
+            android:textColorHint="#9FA4A6"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:background="#F5F7F8"
+            android:gravity="end"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/cross_home"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/close2" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/admin_doctor_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_bar">
+    </androidx.recyclerview.widget.RecyclerView>-->
+
+
+
+</RelativeLayout>
